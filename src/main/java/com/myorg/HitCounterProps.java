@@ -5,7 +5,7 @@ import software.amazon.awscdk.services.lambda.IFunction;
 public interface HitCounterProps {
 
 	// Public constructor for the props builder
-	public static Builder builder(){
+	public static Builder builder() {
 		return new Builder();
 	}
 
@@ -21,8 +21,8 @@ public interface HitCounterProps {
 			return this;
 		}
 
-		public HitCounterProps build(){
-			if (this.downstream == null){
+		public HitCounterProps build() {
+			if (this.downstream == null) {
 				throw new NullPointerException("The downstream property is required!");
 			}
 
