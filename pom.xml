@@ -41,6 +41,17 @@
 
         <!-- Respective AWS Construct Libraries -->
         <dependency>
+            <groupId>com.github.eladb</groupId>
+            <artifactId>cdk-dynamo-table-viewer</artifactId>
+            <version>3.1.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId> software.amazon.jsii</groupId>
+                    <artifactId>jsii-runtime</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>lambda</artifactId>
             <version>${cdk.version}</version>
