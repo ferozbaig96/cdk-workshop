@@ -33,7 +33,6 @@ public class HitCounter extends Construct {
 		this.handler = Function.Builder.create(this, "HitCounterHandler")
 			.runtime(Runtime.NODEJS_14_X)
 			.handler("hitcounter.handler")
-			.functionName("hitcounter")
 			.code(Code.fromAsset("src/lambda"))
 			.environment(environment)
 			.build();
