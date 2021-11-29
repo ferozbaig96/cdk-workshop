@@ -1,12 +1,12 @@
 package com.myorg;
 
+import software.amazon.awscdk.core.Construct;
 import software.amazon.awscdk.services.dynamodb.Attribute;
 import software.amazon.awscdk.services.dynamodb.AttributeType;
 import software.amazon.awscdk.services.dynamodb.Table;
 import software.amazon.awscdk.services.lambda.Code;
 import software.amazon.awscdk.services.lambda.Function;
 import software.amazon.awscdk.services.lambda.Runtime;
-import software.constructs.Construct;
 
 import java.util.HashMap;
 import java.util.Map;
