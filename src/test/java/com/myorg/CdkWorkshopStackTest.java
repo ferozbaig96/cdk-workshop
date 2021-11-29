@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 public class CdkWorkshopStackTest {
 
-    @Test
+    // @Test
     public void testStack() throws IOException {
         App app = new App();
         CdkWorkshopStack stack = new CdkWorkshopStack(app, "test");

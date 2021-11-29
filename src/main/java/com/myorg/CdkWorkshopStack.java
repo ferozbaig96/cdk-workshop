@@ -16,14 +16,6 @@ public class CdkWorkshopStack extends Stack {
     public CdkWorkshopStack(final Construct parent, final String id, final StackProps props) {
         super(parent, id, props);
 
-        final Queue queue = Queue.Builder.create(this, "CdkWorkshopQueue")
-                .visibilityTimeout(Duration.seconds(300))
-                .build();
-
-        final Topic topic = Topic.Builder.create(this, "CdkWorkshopTopic")
-            .displayName("My First Topic Yeah")
-            .build();
-
-        topic.addSubscription(new SqsSubscription(queue));
+        // Nothing here!
     }
 }
