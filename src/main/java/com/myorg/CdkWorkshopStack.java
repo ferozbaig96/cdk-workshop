@@ -23,7 +23,7 @@ public class CdkWorkshopStack extends Stack {
         final Function hello = Function.Builder.create(this, "HelloHandler")
             .runtime(Runtime.NODEJS_14_X)
             .code(Code.fromAsset("src/lambda"))
-            .handler("hello.handler")
+            .handler("index.handler")
             .build();
     }
 }
