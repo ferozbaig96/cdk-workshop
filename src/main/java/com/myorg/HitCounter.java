@@ -39,6 +39,9 @@ public class HitCounter extends Construct {
 
 		// Grants the lambda function read/write permissions to our table
 		this.table.grantReadWriteData(this.handler);
+
+		// Grants the lambda function invoke permissions to the downstream function
+		props.getDownstream().grantInvoke(this.handler);
 	}
 
 	public Function getHandler() {
