@@ -37,5 +37,9 @@ public class PipelineStack extends Stack {
 				))
 				.build())
 			.build();
+
+		// CodePipeline Stage to deploy application
+		final WorkshopPipelineStage deploy = new WorkshopPipelineStage(this, "Deploy");
+		pipeline.addStage(deploy);
 	}
 }
